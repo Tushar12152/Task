@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import Title from "../Hooks/Title";
 import UsersCard from "./UsersCard";
+import { Link } from "react-router-dom";
 
 const UsersList = () => {
     const [allUsers, setAllUsers] = useState([]);
@@ -49,6 +50,10 @@ const UsersList = () => {
     return (
         <div>
             <Title heading={'Users'}></Title>
+
+
+            <Link className="bg-blue-400 px-4 py-2 text-white rounded-md hover:bg-yellow-300" to='/add-user'>Add User</Link>
+
 
            <div className="lg:flex justify-between items-center">
              {/* Search box implementation */}

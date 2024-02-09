@@ -11,9 +11,9 @@ const Navbar = () => {
       </div>
       <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
        
-      <NavLink  to='/' className={({ isActive, isPending }) => isActive ? "active" : isPending ? "pending"  : "hover:text-blue-500 text-md"  } >  Home  </NavLink>
+      <NavLink  to='/' className={({ isActive, isPending }) => isActive ? "text-blue-400" : isPending ? "pending"  : "hover:text-blue-500 text-md"  } >  Home  </NavLink>
 
-<NavLink  to='/users-list' className={({ isActive, isPending }) => isActive ? "active" : isPending ? "pending"  : "hover:text-blue-500 text-md"  } >  Users List  </NavLink>
+<NavLink  to='/users-list' className={({ isActive, isPending }) => isActive ? "text-blue-400" : isPending ? "pending"  : "hover:text-blue-500 text-md"  } >  Users List  </NavLink>
 
       </ul>
     </div>
@@ -22,9 +22,9 @@ const Navbar = () => {
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1 flex gap-6 justify-center">
      
-   <NavLink  to='/' className={({ isActive, isPending }) => isActive ? "active" : isPending ? "pending"  : "hover:text-blue-500 text-md"  } >  Home  </NavLink>
+   <NavLink  to='/' className={({ isActive, isPending }) => isActive ? "text-blue-400" : isPending ? "pending"  : "hover:text-blue-500 text-md"  } >  Home  </NavLink>
 
-   <NavLink  to='users-list'  className={({ isActive, isPending }) => isActive ? "active" : isPending ? "pending"  : "hover:text-blue-500 text-md"  } >  Users List  </NavLink>
+   <NavLink  to='users-list'  className={({ isActive, isPending }) => isActive ? "text-blue-400" : isPending ? "pending"  : "hover:text-blue-500 text-md"  } >  Users List  </NavLink>
 
     </ul>
   </div>
